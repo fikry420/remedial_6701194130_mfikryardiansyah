@@ -1,3 +1,4 @@
+import 'package:remedial_final/core.dart';
 import 'package:flutter/material.dart';
 import 'dart:math';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -9,6 +10,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Color the Number',
+navigatorKey: Get.navigatorKey,
       home: RandomNumbersScreen(),
     );
   }
